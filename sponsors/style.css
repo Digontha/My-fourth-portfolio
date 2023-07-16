@@ -1,6 +1,14 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans&family=Work+Sans:wght@200;300;400;500;600;800&display=swap');
-.menu-heading{
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+  .menu-heading{
 color:  #131313;
 font-size: 45px;
 font-weight: 700;
@@ -44,12 +52,14 @@ font-weight: 500;
   color:  #131313;
   font-size: 64px;
   font-weight: 700;
+  margin-top: 100px;
 
 }
 .banner-pera{
   color: #727272;
  font-size: 16px;
  font-weight: 400;
+ margin-top: 30px;
 }
 .btn{
  width: 180px;
@@ -60,9 +70,76 @@ font-weight: 500;
  color: #FFF;
  font-size: 20px; 
  font-weight: 600;
+ margin-top: 30px;
 }
 
 .bannerimg{
  text-align: center;
  margin-top: 50px;
+ 
+}
+.banner-img{
+
+}
+.team-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  background: #FFF;
+}
+.team-img-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-right: 300px;
+  gap: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.teamimg{
+  width: 300px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+  
+  
+  .banner-img{
+    width: 100%;
+  }
+  nav{
+    flex-direction: column;
+    gap: 20px;
+   
+  }
+  .banner-bar{
+    margin-top: 30px;
+  
+}
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+  .banner-img{
+    width: 100%;
+  }
+  nav{
+    flex-direction: column;
+    gap: 20px;
+   
+  }
+  .banner-bar{
+    margin-top: 30px;
+  
+}
 }
